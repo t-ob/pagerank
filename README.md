@@ -1,6 +1,6 @@
 # pagerank
 
-A Clojure library designed to ... well, that part is up to you.
+My experiments with running PageRank with Cascalog. Wildly inefficient, don't go making no search engines off this.
 
 ## Usage
 
