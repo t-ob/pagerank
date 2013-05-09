@@ -20,8 +20,17 @@
       (* ?a ?v :> ?t)
       (c/sum ?t :> ?s)))
 
-(defn rank [iterations source vs]
+(defn rank [iterations source]
   (nth (iterate (partial pr-iter source)
-                (pr-iter source vs))
+                (instantiate-vector source))
        iterations))
+
+;; (require '[pagerank.playground :refer [graph]])
+
+;; (?- (stdout)
+;;     (rank 10 (norm graph)))
+
+
+
+
 
